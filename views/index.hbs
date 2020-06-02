@@ -1,0 +1,34 @@
+{{!-- data will go inside the body & need to change to relevant data variable declared--}} 
+<div class="container">
+
+    
+
+
+    <span class={{weatherInfo.main}}>
+
+        <form action="/" method="post">
+            <input class="input" type="text" name="city" placeholder="Enter a city">
+            <input type="submit" value="submit"></button>
+        </form>
+
+        <div class="content">
+            <h1>{{weatherInfo.name}},{{weatherInfo.country}}</h1>
+           
+            
+            <div class="temperature">
+                <div>
+                    <img class="weather-icon" src={{weatherInfo.icon}} />
+                </div>
+               
+                <div>
+                    <p class="temp"> Temp: {{weatherInfo.temp}}</p>
+                    <p class="temp">Feels like: {{weatherInfo.feelslike}}</p>
+                </div>
+                
+            </div>
+            <p>{{weatherInfo.description}}</p>
+                
+        </div>
+    </span>
+</div>
+
