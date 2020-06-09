@@ -8,10 +8,11 @@
 
         <form action="/" method="post">
             <input class="input" type="text" name="city" placeholder="Enter a city">
-            <input type="submit" value="submit"></button>
+            <input class="button" type="submit" value="submit"></input>
         </form>
 
         <div class="content">
+            {{#if weatherInfo}}
             <h1>{{weatherInfo.name}},{{weatherInfo.country}}</h1>
            
             
@@ -27,7 +28,7 @@
                 
             </div>
             <p>{{weatherInfo.description}}</p>
-                
+            {{/if}}
         </div>
     </span>
 </div>

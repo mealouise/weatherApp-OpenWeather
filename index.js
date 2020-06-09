@@ -78,6 +78,8 @@ app.post('/', async(req,res) => {
         weatherInfo.icon="https://img.icons8.com/color/96/000000/partly-cloudy-day.png";
     } else if (weatherInfo.main === "Rain") {
         weatherInfo.icon="https://img.icons8.com/color/96/000000/rain.png";
+    } else if (weatherInfo.main === "Haze") {
+        weatherInfo.icon="https://img.icons8.com/color/2x/fog-day.png";
     }
     console.log(weatherInfo);
     // let clouds = data.clouds.all
